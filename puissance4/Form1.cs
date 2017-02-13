@@ -14,7 +14,6 @@ namespace puissance4
     public partial class Form1 : Form
     {
         private Jeu j1;
-        public volatile bool HumainOK = false;
         private int iProfondeur;
         public Form1()
         {
@@ -24,7 +23,6 @@ namespace puissance4
         }
         private void btnJouer_click(object sender, EventArgs e)
         {
-            HumainOK = true;
             Button b = (Button)sender;
 
             string s = b.Tag.ToString();
@@ -226,13 +224,13 @@ namespace puissance4
             switch(b.Tag.ToString())
             {
                 case "JVJ":
-                    j1.DefinitionJoueur(new Humain(this), new Humain(this));
+                    j1.DefinitionJoueur(new Humain(), new Humain());
                     break;  
                 case "IAVJ":
-                    j1.DefinitionJoueur(new IA(j1,iProfondeur), new Humain(this));
+                    j1.DefinitionJoueur(new IA(j1,iProfondeur), new Humain());
                     break; 
                 case "JVIA":
-                    j1.DefinitionJoueur(new Humain(this), new IA(j1, iProfondeur));
+                    j1.DefinitionJoueur(new Humain(), new IA(j1, iProfondeur));
                     break; 
                 case "IAVIA":
                     j1.DefinitionJoueur(new IA(j1, iProfondeur+1), new IA(j1, iProfondeur));
@@ -245,6 +243,11 @@ namespace puissance4
             btn5.Visible = true;
             btn6.Visible = true;
             btn7.Visible = true;
+           
+        }
+
+        private void btnCommencer_Click(object sender, EventArgs e)
+        {
             j1.CommencementDuJEu();
         }
     }

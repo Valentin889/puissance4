@@ -81,6 +81,7 @@
             this.btnIAVJ = new System.Windows.Forms.Button();
             this.btnJVIA = new System.Windows.Forms.Button();
             this.btnIAVIA = new System.Windows.Forms.Button();
+            this.btnCommencer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pct0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -540,7 +541,7 @@
             // 
             // btnJVJ
             // 
-            this.btnJVJ.Location = new System.Drawing.Point(12, 351);
+            this.btnJVJ.Location = new System.Drawing.Point(13, 318);
             this.btnJVJ.Name = "btnJVJ";
             this.btnJVJ.Size = new System.Drawing.Size(75, 23);
             this.btnJVJ.TabIndex = 49;
@@ -551,7 +552,7 @@
             // 
             // btnIAVJ
             // 
-            this.btnIAVJ.Location = new System.Drawing.Point(160, 350);
+            this.btnIAVJ.Location = new System.Drawing.Point(144, 318);
             this.btnIAVJ.Name = "btnIAVJ";
             this.btnIAVJ.Size = new System.Drawing.Size(75, 23);
             this.btnIAVJ.TabIndex = 50;
@@ -562,7 +563,7 @@
             // 
             // btnJVIA
             // 
-            this.btnJVIA.Location = new System.Drawing.Point(307, 351);
+            this.btnJVIA.Location = new System.Drawing.Point(304, 318);
             this.btnJVIA.Name = "btnJVIA";
             this.btnJVIA.Size = new System.Drawing.Size(75, 23);
             this.btnJVIA.TabIndex = 51;
@@ -573,7 +574,7 @@
             // 
             // btnIAVIA
             // 
-            this.btnIAVIA.Location = new System.Drawing.Point(461, 351);
+            this.btnIAVIA.Location = new System.Drawing.Point(461, 318);
             this.btnIAVIA.Name = "btnIAVIA";
             this.btnIAVIA.Size = new System.Drawing.Size(75, 23);
             this.btnIAVIA.TabIndex = 52;
@@ -582,11 +583,23 @@
             this.btnIAVIA.UseVisualStyleBackColor = true;
             this.btnIAVIA.Click += new System.EventHandler(this.btnDefinirJoueur);
             // 
+            // btnCommencer
+            // 
+            this.btnCommencer.Location = new System.Drawing.Point(235, 347);
+            this.btnCommencer.Name = "btnCommencer";
+            this.btnCommencer.Size = new System.Drawing.Size(75, 23);
+            this.btnCommencer.TabIndex = 53;
+            this.btnCommencer.Tag = "JVIA";
+            this.btnCommencer.Text = "commencer";
+            this.btnCommencer.UseVisualStyleBackColor = true;
+            this.btnCommencer.Click += new System.EventHandler(this.btnCommencer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 378);
+            this.Controls.Add(this.btnCommencer);
             this.Controls.Add(this.btnIAVIA);
             this.Controls.Add(this.btnJVIA);
             this.Controls.Add(this.btnIAVJ);
@@ -743,6 +756,7 @@
         private System.Windows.Forms.Button btnIAVJ;
         private System.Windows.Forms.Button btnJVIA;
         private System.Windows.Forms.Button btnIAVIA;
+        private System.Windows.Forms.Button btnCommencer;
     }
 }
 

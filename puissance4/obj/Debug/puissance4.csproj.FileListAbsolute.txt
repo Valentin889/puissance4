@@ -16,3 +16,12 @@ F:\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
 F:\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
 F:\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
 F:\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference.cache
+D:\puissance4\puissance4\bin\Debug\puissance4.exe.config
+D:\puissance4\puissance4\obj\Debug\puissance4.exe
+D:\puissance4\puissance4\obj\Debug\puissance4.pdb
+D:\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference.cache
+D:\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
+D:\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
+D:\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
+D:\puissance4\puissance4\bin\Debug\puissance4.exe
+D:\puissance4\puissance4\bin\Debug\puissance4.pdb

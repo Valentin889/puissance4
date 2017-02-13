@@ -10,24 +10,12 @@ namespace puissance4
 {
     public class Humain : Joueur
     {
-        private Form1 form;
-        private BackgroundWorker backgroundWorker1;
-        public Humain(Form1 f)
+        public Humain()
         {
-            form = f;
         }
         public override int DemandeCoup()
         {
-            backgroundWorker1 = new BackgroundWorker();
-            this.backgroundWorker1.RunWorkerAsync();
-            form.HumainOK = false;
-            while(!form.HumainOK)
-            {
-
-            }
             return 0;
-            
         }
-    
     }
 }
