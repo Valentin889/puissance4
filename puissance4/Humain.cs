@@ -10,12 +10,21 @@ namespace puissance4
 {
     public class Humain : Joueur
     {
+        private Attente attente;
         public Humain()
         {
+            attente = new Attente();
         }
         public override int DemandeCoup()
         {
+            Thread t = new Thread(new ThreadStart(ThreadProcSafe));
+            t.IsBackground = true;
+            t.Start();
             return 0;
+        }
+        private void ThreadProcSafe()
+        {
+            attente.MethodWait();
         }
     }
 }
