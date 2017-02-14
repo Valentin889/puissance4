@@ -9,8 +9,7 @@ namespace puissance4
 {
     public class Jeu
     {
-        private Joueur Joueur1;
-        private Joueur Joueur2;
+        private List<Joueur> ListJoueur;
         private Form1 form;
         private int[][] Tableau;
         private int i1;
@@ -32,36 +31,44 @@ namespace puissance4
             {
                 Tableau[i] = new int[7];
             }
+            ListJoueur = new List<Joueur>();
             Recommancer();
             form = f;
         }
 
         public void DefinitionJoueur(Joueur j1, Joueur j2)
         {
-            Joueur1 = j1;
-            Joueur2 = j1;
+            listJoueur.Add(j1);
+            listJoueur.Add(j2);
         }
         public void CommencementDuJEu()
         {
-            Joueur jTemporaire = Joueur1;
-            while(gagnant()==0)
+            try
             {
-                int coup = jTemporaire.DemandeCoup();
-                if(Jouer(coup))
-                {
-                    if(jTemporaire==Joueur1)
-                    {
-                        jTemporaire = Joueur2;
-                    }
-                    else
-                    {
-                        jTemporaire = Joueur1;
-                    }
-                    form.AppelleAffichage(coup);
-                }
+                Humain JoueurT = (Humain)listJoueur[0];
+            }
+            catch
+            {
+                listJoueur[0].DemandeCoup();
             }
         }
+        public void CoupHumain(int i)
+        {
+            listJoueur[0].dernierCoup = i;
+        }
+        public void ProchainJoueur()
+        {
+            Jouer(listJoueur[0].dernierCoup);
+            form.AppelleAffichage(listJoueur[0].dernierCoup);
 
+
+            listJoueur.Add(listJoueur[0]);
+            listJoueur.Remove(listJoueur[0]);
+            if (!listJoueur[0].isHumain)
+            {
+                listJoueur[0].DemandeCoup();
+            }
+        }
         public int I1
         {
             get
@@ -144,17 +151,6 @@ namespace puissance4
             get
             {
                 return iCoup;
-            }
-        }
-        public bool Joueur
-        {
-            get
-            {
-                return bJoueur;
-            }
-            set
-            {
-                bJoueur = value;
             }
         }
         public int[][] tableau
@@ -260,6 +256,13 @@ namespace puissance4
             }
             //Si le jeu est fini et que personne n'a gagné, on renvoie 3
             return 3;
+        }
+        public bool Joueur
+        {
+            get
+            {
+                return bJoueur;
+            }
         }
         public void nb_series(int n)
         {
@@ -420,6 +423,13 @@ namespace puissance4
                 }
                 a--;
                 b++;
+            }
+        }
+        public List<Joueur> listJoueur
+        {
+            get
+            {
+                return ListJoueur;
             }
         }
 

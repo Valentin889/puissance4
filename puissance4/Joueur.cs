@@ -8,6 +8,31 @@ namespace puissance4
 {
     public abstract class Joueur
     {
-        public abstract int DemandeCoup();
+        private int iDernierCoup;
+        private bool IsHumain = false;
+         public abstract void DemandeCoup();
+
+        public int dernierCoup
+        {
+            get
+            {
+                return iDernierCoup;
+            }
+            set
+            {
+                iDernierCoup = value;
+            }
+        }
+        public bool isHumain
+        {
+            get
+            {
+                return IsHumain;
+            }
+            set
+            {
+                IsHumain = value;
+            }
+        }
     }
 }

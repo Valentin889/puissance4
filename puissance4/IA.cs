@@ -41,7 +41,7 @@ namespace puissance4
             iProfondeur = Profondeur;
         }
 
-        public override int DemandeCoup()
+        public override void DemandeCoup()
         {
             max = -10000;
 
@@ -53,8 +53,8 @@ namespace puissance4
             Test(jeux.I6, 5, iProfondeur, true);
             Test(jeux.I7, 6, iProfondeur, true);
 
-           
-            return Maxi;
+            this.dernierCoup = maxi;
+            jeux.ProchainJoueur();
         }
         private void Test(int i,int j, int profondeur, bool bMax)
         {
