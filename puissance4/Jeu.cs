@@ -209,19 +209,19 @@ namespace puissance4
             {
                 switch (i)
                 {
-                    case 0: Tableau[i][i1] = J;
+                    case 0: Tableau[i1][i] = J;
                         break;
-                    case 1: Tableau[i][i2] = J;
+                    case 1: Tableau[i2][i] = J;
                         break;
-                    case 2: Tableau[i][i3] = J;
+                    case 2: Tableau[i3][i] = J;
                         break;
-                    case 3: Tableau[i][i4] = J;
+                    case 3: Tableau[i4][i] = J;
                         break;
-                    case 4: Tableau[i][i5] = J;
+                    case 4: Tableau[i5][i] = J;
                         break;
-                    case 5: Tableau[i][i6] = J;
+                    case 5: Tableau[i6][i] = J;
                         break;
-                    case 6: Tableau[i][i7] = J;
+                    case 6: Tableau[i7][i] = J;
                         break;
                 }
                 iCoup++;
