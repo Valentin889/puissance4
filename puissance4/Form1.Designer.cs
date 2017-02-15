@@ -81,7 +81,7 @@
             this.btnIAVJ = new System.Windows.Forms.Button();
             this.btnJVIA = new System.Windows.Forms.Button();
             this.btnIAVIA = new System.Windows.Forms.Button();
-            this.btnCommencer = new System.Windows.Forms.Button();
+            this.btnJouer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pct0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -583,23 +583,24 @@
             this.btnIAVIA.UseVisualStyleBackColor = true;
             this.btnIAVIA.Click += new System.EventHandler(this.btnDefinirJoueur);
             // 
-            // btnCommencer
+            // btnJouer
             // 
-            this.btnCommencer.Location = new System.Drawing.Point(235, 347);
-            this.btnCommencer.Name = "btnCommencer";
-            this.btnCommencer.Size = new System.Drawing.Size(75, 23);
-            this.btnCommencer.TabIndex = 53;
-            this.btnCommencer.Tag = "JVIA";
-            this.btnCommencer.Text = "commencer";
-            this.btnCommencer.UseVisualStyleBackColor = true;
-            this.btnCommencer.Click += new System.EventHandler(this.btnCommencer_Click);
+            this.btnJouer.Location = new System.Drawing.Point(223, 343);
+            this.btnJouer.Name = "btnJouer";
+            this.btnJouer.Size = new System.Drawing.Size(75, 23);
+            this.btnJouer.TabIndex = 53;
+            this.btnJouer.Tag = "JVIA";
+            this.btnJouer.Text = "jouer";
+            this.btnJouer.UseVisualStyleBackColor = true;
+            this.btnJouer.Visible = false;
+            this.btnJouer.Click += new System.EventHandler(this.btnJouer_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 378);
-            this.Controls.Add(this.btnCommencer);
+            this.Controls.Add(this.btnJouer);
             this.Controls.Add(this.btnIAVIA);
             this.Controls.Add(this.btnJVIA);
             this.Controls.Add(this.btnIAVJ);
@@ -756,7 +757,7 @@
         private System.Windows.Forms.Button btnIAVJ;
         private System.Windows.Forms.Button btnJVIA;
         private System.Windows.Forms.Button btnIAVIA;
-        private System.Windows.Forms.Button btnCommencer;
+        private System.Windows.Forms.Button btnJouer;
     }
 }
 

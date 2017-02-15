@@ -189,7 +189,7 @@ namespace puissance4
         {
             if (b)
             {
-                p.BackColor = Color.Yellow;
+                p.BackColor = Color.Blue;
             }
             else
             {
@@ -231,6 +231,13 @@ namespace puissance4
                     jeu.DefinitionJoueur(new IA(jeu, iProfondeur+1), new IA(jeu, iProfondeur));
                     break;
             }
+            btnJouer.Visible = true;
+           
+        }
+
+        private void btnJouer_Click(object sender, EventArgs e)
+        {
+            ReinitialiserAffichageEtRecommancer();
             btn1.Visible = true;
             btn2.Visible = true;
             btn3.Visible = true;
@@ -238,11 +245,6 @@ namespace puissance4
             btn5.Visible = true;
             btn6.Visible = true;
             btn7.Visible = true;
-           
-        }
-
-        private void btnCommencer_Click(object sender, EventArgs e)
-        {
             jeu.CommencementDuJEu();
         }
 
