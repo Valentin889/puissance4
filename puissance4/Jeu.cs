@@ -60,7 +60,18 @@ namespace puissance4
         {
             Jouer(listJoueur[0].dernierCoup);
             form.AppelleAffichage(listJoueur[0].dernierCoup);
+            int i;
+            if((i = gagnant())!=0)
+            {
+                if(i==1||i==2)
+                {
+                    form.AfficheGagnant(listJoueur[i-1]);
+                }
+                else
+                {
 
+                }
+            }
 
             listJoueur.Add(listJoueur[0]);
             listJoueur.Remove(listJoueur[0]);
@@ -194,24 +205,23 @@ namespace puissance4
                 J = 2;
                 bJoueur = true;
             }
-            i--;
             try
             {
                 switch (i)
                 {
-                    case 0: Tableau[i1][i] = J;
+                    case 0: Tableau[i][i1] = J;
                         break;
-                    case 1: Tableau[i2][i] = J;
+                    case 1: Tableau[i][i2] = J;
                         break;
-                    case 2: Tableau[i3][i] = J;
+                    case 2: Tableau[i][i3] = J;
                         break;
-                    case 3: Tableau[i4][i] = J;
+                    case 3: Tableau[i][i4] = J;
                         break;
-                    case 4: Tableau[i5][i] = J;
+                    case 4: Tableau[i][i5] = J;
                         break;
-                    case 5: Tableau[i6][i] = J;
+                    case 5: Tableau[i][i6] = J;
                         break;
-                    case 6: Tableau[i7][i] = J;
+                    case 6: Tableau[i][i7] = J;
                         break;
                 }
                 iCoup++;

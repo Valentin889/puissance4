@@ -34,5 +34,9 @@ namespace puissance4
                 IsHumain = value;
             }
         }
+        public string Gagne()
+        {
+            return this.GetType().ToString();
+        }
     }
 }

@@ -245,5 +245,14 @@ namespace puissance4
         {
             jeu.CommencementDuJEu();
         }
+
+        public void AfficheGagnant(Joueur joueurGagnant)
+        {
+            MessageBox.Show(joueurGagnant.Gagne());
+        }
+        public void MatchNul()
+        {
+            MessageBox.Show("Match  nul");
+        }
     }
 }

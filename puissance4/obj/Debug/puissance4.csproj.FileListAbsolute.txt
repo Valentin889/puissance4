@@ -25,3 +25,21 @@ D:\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
 D:\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
 D:\puissance4\puissance4\bin\Debug\puissance4.exe
 D:\puissance4\puissance4\bin\Debug\puissance4.pdb
+F:\jeu\puissance4\bin\Debug\puissance4.exe.config
+F:\jeu\puissance4\bin\Debug\puissance4.exe
+F:\jeu\puissance4\bin\Debug\puissance4.pdb
+F:\jeu\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference.cache
+F:\jeu\puissance4\obj\Debug\puissance4.Form1.resources
+F:\jeu\puissance4\obj\Debug\puissance4.Properties.Resources.resources
+F:\jeu\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
+F:\jeu\puissance4\obj\Debug\puissance4.exe
+F:\jeu\puissance4\obj\Debug\puissance4.pdb
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\bin\Debug\puissance4.exe.config
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.exe
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.pdb
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\bin\Debug\puissance4.exe
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\bin\Debug\puissance4.pdb
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference.cache
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
+\\s2.rpn.ch\home\CPLN\Eleves\ET\SchneebergVa\info\Valentin Schneeberger\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
