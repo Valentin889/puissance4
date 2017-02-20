@@ -227,16 +227,16 @@ namespace puissance4
             switch(b.Tag.ToString())
             {
                 case "JVJ":
-                    jeu.DefinitionJoueur(new Humain(), new Humain());
+                    jeu.DefinitionJoueur(new Humain(1), new Humain(2));
                     break;  
                 case "IAVJ":
-                    jeu.DefinitionJoueur(new IA(jeu,iProfondeur), new Humain());
+                    jeu.DefinitionJoueur(new IA(jeu,iProfondeur,1), new Humain(2));
                     break; 
                 case "JVIA":
-                    jeu.DefinitionJoueur(new Humain(), new IA(jeu, iProfondeur));
+                    jeu.DefinitionJoueur(new Humain(1), new IA(jeu, iProfondeur,2));
                     break; 
                 case "IAVIA":
-                    jeu.DefinitionJoueur(new IA(jeu, iProfondeur+1), new IA(jeu, iProfondeur));
+                    jeu.DefinitionJoueur(new IA(jeu, iProfondeur+1,1), new IA(jeu, iProfondeur,2));
                     break;
             }
             jeu.CommencementDuJEu();
@@ -252,7 +252,7 @@ namespace puissance4
 
         public void AfficheGagnant(Joueur joueurGagnant)
         {
-            MessageBox.Show(joueurGagnant.Gagne());
+            MessageBox.Show("le joueur "+joueurGagnant.NumeroJoueur.ToString()+" a gagné");
         }
         public void MatchNul()
         {

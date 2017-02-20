@@ -70,3 +70,12 @@ D:\jeu\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference
 D:\jeu\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
 D:\jeu\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
 D:\jeu\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
+F:\jeu\puissance4\puissance4\bin\Debug\puissance4.exe.config
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.exe
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.pdb
+F:\jeu\puissance4\puissance4\bin\Debug\puissance4.exe
+F:\jeu\puissance4\puissance4\bin\Debug\puissance4.pdb
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference.cache
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
+F:\jeu\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache

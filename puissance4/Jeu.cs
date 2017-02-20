@@ -61,23 +61,26 @@ namespace puissance4
             Jouer(listJoueur[0].dernierCoup);
             form.AppelleAffichage(listJoueur[0].dernierCoup);
             int i;
-            if((i = gagnant())!=0)
+            if ((i = gagnant()) != 0)
             {
-                if(i==1||i==2)
+                if (i == 1||i==2)
                 {
-                    form.AfficheGagnant(listJoueur[i-1]);
+                    form.AfficheGagnant(listJoueur[0]);
                 }
                 else
                 {
+                    form.MatchNul();
 
                 }
             }
-
-            listJoueur.Add(listJoueur[0]);
-            listJoueur.Remove(listJoueur[0]);
-            if (!listJoueur[0].isHumain)
+            else
             {
-                listJoueur[0].DemandeCoup();
+                listJoueur.Add(listJoueur[0]);
+                listJoueur.Remove(listJoueur[0]);
+                if (!listJoueur[0].isHumain)
+                {
+                    listJoueur[0].DemandeCoup();
+                }
             }
         }
         public int I1

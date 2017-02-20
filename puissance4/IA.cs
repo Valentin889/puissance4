@@ -30,7 +30,7 @@ namespace puissance4
                 return Maxj;
             }
         }
-        public IA(Jeu j, int Profondeur)
+        public IA(Jeu j, int Profondeur,int iNumero)
         {
             jeux = j;
             Maxi = 0;
@@ -39,6 +39,7 @@ namespace puissance4
             min = 0;
             tmp = 0;
             iProfondeur = Profondeur;
+            NumeroJoueur = iNumero;
         }
 
         public override void DemandeCoup()

@@ -10,7 +10,7 @@ namespace puissance4
     {
         private int iDernierCoup;
         private bool IsHumain = false;
-         public abstract void DemandeCoup();
+        public abstract void DemandeCoup();
 
         public int dernierCoup
         {
@@ -38,5 +38,6 @@ namespace puissance4
         {
             return this.GetType().ToString();
         }
+        public int NumeroJoueur { get; set; }
     }
 }
