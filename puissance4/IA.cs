@@ -30,7 +30,7 @@ namespace puissance4
                 return Maxj;
             }
         }
-        public IA(Jeu j, int Profondeur,int iNumero)
+        public IA(Jeu j, int Profondeur,int numeroJoueur, int numeroJoueurAdverse)
         {
             jeux = j;
             Maxi = 0;
@@ -39,7 +39,8 @@ namespace puissance4
             min = 0;
             tmp = 0;
             iProfondeur = Profondeur;
-            NumeroJoueur = iNumero;
+            NumeroJoueur = numeroJoueur;
+            NumeroJoueurAdverse = numeroJoueurAdverse;
         }
 
         public override void DemandeCoup()
@@ -60,7 +61,7 @@ namespace puissance4
             jeux.NombreParColonne[j]++;
             if (bMax)
             {
-                jeux.tableau[i][j] = 2;
+                jeux.tableau[i][j] = NumeroJoueur;
                
                 tmp = Min(jeux.tableau, profondeur - 1);
                 if (tmp > max)
@@ -72,7 +73,7 @@ namespace puissance4
             }
             else
             {
-                jeux.tableau[i][j] = 1;
+                jeux.tableau[i][j] = NumeroJoueurAdverse;
                 tmp = Max(jeux.tableau, profondeur - 1);
                 if (tmp > min)
                 {
@@ -95,7 +96,7 @@ namespace puissance4
             max = -10000;
             for (int i = 0; i < jeux.NombreParColonne.Length; i++)
             {
-                Test(jeux.NombreParColonne[i], i, iProfondeur, true);
+                Test(jeux.NombreParColonne[i], i, profondeur, true);
             }
 
             return max;
@@ -111,7 +112,7 @@ namespace puissance4
             min = 10000;
             for (int i = 0; i < jeux.NombreParColonne.Length; i++)
             {
-                Test(jeux.NombreParColonne[i], i, iProfondeur, false);
+                Test(jeux.NombreParColonne[i], i, profondeur, false);
             }
             return min;
 

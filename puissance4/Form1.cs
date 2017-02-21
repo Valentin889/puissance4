@@ -224,13 +224,13 @@ namespace puissance4
                     jeu.DefinitionJoueur(new Humain(1), new Humain(2));
                     break;  
                 case "IAVJ":
-                    jeu.DefinitionJoueur(new IA(jeu,iProfondeur,1), new Humain(2));
+                    jeu.DefinitionJoueur(new IA(jeu,iProfondeur,1,2), new Humain(2));
                     break; 
                 case "JVIA":
-                    jeu.DefinitionJoueur(new Humain(1), new IA(jeu, iProfondeur,2));
+                    jeu.DefinitionJoueur(new Humain(1), new IA(jeu, iProfondeur,2,1));
                     break; 
                 case "IAVIA":
-                    jeu.DefinitionJoueur(new IA(jeu, iProfondeur+1,1), new IA(jeu, iProfondeur,2));
+                    jeu.DefinitionJoueur(new IA(jeu, iProfondeur+1,1,2), new IA(jeu, iProfondeur,2,1));
                     break;
             }
             jeu.CommencementDuJEu();

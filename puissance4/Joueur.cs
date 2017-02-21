@@ -39,5 +39,6 @@ namespace puissance4
             return this.GetType().ToString();
         }
         public int NumeroJoueur { get; set; }
+        public int NumeroJoueurAdverse { get; set; }
     }
 }
