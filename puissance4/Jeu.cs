@@ -38,11 +38,7 @@ namespace puissance4
         }
         public void CommencementDuJEu()
         {
-            try
-            {
-                Humain JoueurT = (Humain)listJoueur[0];
-            }
-            catch
+            if(!listJoueur[0].isHumain)
             {
                 listJoueur[0].DemandeCoup();
             }
