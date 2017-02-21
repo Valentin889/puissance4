@@ -46,43 +46,18 @@ namespace puissance4
         {
             max = -10000;
 
-            Test(jeux.I1, 0, iProfondeur, true);
-            Test(jeux.I2, 1, iProfondeur, true);
-            Test(jeux.I3, 2, iProfondeur, true);
-            Test(jeux.I4, 3, iProfondeur, true);
-            Test(jeux.I5, 4, iProfondeur, true);
-            Test(jeux.I6, 5, iProfondeur, true);
-            Test(jeux.I7, 6, iProfondeur, true);
+
+            for(int i=0;i<jeux.NombreParColonne.Length;i++)
+            {
+                Test(jeux.NombreParColonne[i], i, iProfondeur, true);
+            }
 
             this.dernierCoup = maxi;
             jeux.ProchainJoueur();
         }
         private void Test(int i,int j, int profondeur, bool bMax)
         {
-            switch (j)
-            {
-                case 0:
-                    jeux.I1++;
-                    break;
-                case 1:
-                    jeux.I2++;
-                    break;
-                case 2:
-                    jeux.I3++;
-                    break;
-                case 3:
-                    jeux.I4++;
-                    break;
-                case 4:
-                    jeux.I5++;
-                    break;
-                case 5:
-                    jeux.I6++;
-                    break;
-                case 6:
-                    jeux.I7++;
-                    break;
-            }
+            jeux.NombreParColonne[j]++;
             if (bMax)
             {
                 jeux.tableau[i][j] = 2;
@@ -106,30 +81,7 @@ namespace puissance4
                     Maxj = j;
                 }
             }
-            switch(j)
-            {
-                case 0:
-                    jeux.I1--;
-                    break;
-                case 1:
-                    jeux.I2--;
-                    break;
-                case 2:
-                    jeux.I3--;
-                    break;
-                case 3:
-                    jeux.I4--;
-                    break;
-                case 4:
-                    jeux.I5--;
-                    break;
-                case 5:
-                    jeux.I6--;
-                    break;
-                case 6:
-                    jeux.I7--;
-                    break;
-            }
+            jeux.NombreParColonne[j]--;
             jeux.tableau[i][j] = 0;
 
         }
@@ -141,14 +93,10 @@ namespace puissance4
             }
 
             max = -10000;
-
-            Test(jeux.I1, 0, profondeur, true);
-            Test(jeux.I2, 1, profondeur, true);
-            Test(jeux.I3, 2, profondeur, true);
-            Test(jeux.I4, 3, profondeur, true);
-            Test(jeux.I5, 4, profondeur, true);
-            Test(jeux.I6, 5, profondeur, true);
-            Test(jeux.I7, 6, profondeur, true);
+            for (int i = 0; i < jeux.NombreParColonne.Length; i++)
+            {
+                Test(jeux.NombreParColonne[i], i, iProfondeur, true);
+            }
 
             return max;
 
@@ -161,15 +109,10 @@ namespace puissance4
             }
 
             min = 10000;
-
-            Test(jeux.I1, 0, profondeur, false);
-            Test(jeux.I2, 1, profondeur, false);
-            Test(jeux.I3, 2, profondeur, false);
-            Test(jeux.I4, 3, profondeur, false);
-            Test(jeux.I5, 4, profondeur, false);
-            Test(jeux.I6, 5, profondeur, false);
-            Test(jeux.I7, 6, profondeur, false);
-
+            for (int i = 0; i < jeux.NombreParColonne.Length; i++)
+            {
+                Test(jeux.NombreParColonne[i], i, iProfondeur, false);
+            }
             return min;
 
         }

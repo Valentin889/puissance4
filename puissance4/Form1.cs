@@ -53,7 +53,7 @@ namespace puissance4
             switch(i)
             {
                 case 0: 
-                    switch (jeu.I1)
+                    switch (jeu.NombreParColonne[0])
                     {
                         case 0: Affichage(pct0, jeu.Joueur);
                             break;
@@ -68,10 +68,10 @@ namespace puissance4
                         case 5: Affichage(pct50, jeu.Joueur);
                             break;
                     }
-                    jeu.I1++;
+                    jeu.NombreParColonne[0]++;
                     break;
                 case 1: 
-                switch (jeu.I2)
+                switch (jeu.NombreParColonne[1])
                     {
                         case 0: Affichage(pct1, jeu.Joueur);
                             break;
@@ -86,10 +86,10 @@ namespace puissance4
                         case 5: Affichage(pct51, jeu.Joueur);
                             break;
                     }
-                    jeu.I2++;
+                    jeu.NombreParColonne[1]++;
                     break;
                 case 2: 
-                switch (jeu.I3)
+                switch (jeu.NombreParColonne[2])
                     {
                         case 0: Affichage(pct2, jeu.Joueur);
                             break;
@@ -105,10 +105,10 @@ namespace puissance4
                             break;
                        
                     }
-                    jeu.I3++;
+                    jeu.NombreParColonne[2]++;
                     break;
                 case 3: 
-                switch (jeu.I4)
+                switch (jeu.NombreParColonne[3])
                     {
                         case 0: Affichage(pct3, jeu.Joueur);
                             break;
@@ -124,10 +124,10 @@ namespace puissance4
                             break;
                        
                     }
-                    jeu.I4++;
+                    jeu.NombreParColonne[3]++;
                     break;
                 case 4: 
-                switch (jeu.I5)
+                switch (jeu.NombreParColonne[4])
                     {
                         case 0: Affichage(pct4, jeu.Joueur);
                             break;
@@ -143,10 +143,10 @@ namespace puissance4
                             break;
                        
                     }
-                    jeu.I5++;
+                    jeu.NombreParColonne[4]++;
                     break;
                 case 5: 
-                switch (jeu.I6)
+                switch (jeu.NombreParColonne[5])
                     {
                         case 0: Affichage(pct5, jeu.Joueur);
                             break;
@@ -162,10 +162,10 @@ namespace puissance4
                             break;
                       
                     }
-                    jeu.I6++;
+                    jeu.NombreParColonne[6]++;
                     break;
                 case 6: 
-                    switch (jeu.I7)
+                    switch (jeu.NombreParColonne[6])
                     {
                         case 0: Affichage(pct6, jeu.Joueur);
                             break;
@@ -181,7 +181,7 @@ namespace puissance4
                             break;
                       
                     }
-                    jeu.I7++;
+                    jeu.NombreParColonne[6]++;
                     break;
             }
         }

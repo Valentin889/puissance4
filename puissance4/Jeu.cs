@@ -12,13 +12,7 @@ namespace puissance4
         private List<Joueur> ListJoueur;
         private Form1 form;
         private int[][] Tableau;
-        private int i1;
-        private int i2;
-        private int i3;
-        private int i4;
-        private int i5;
-        private int i6;
-        private int i7;
+        private int[] iNombreParColonne;
         private int iCoup;
         private int series_j1;
         private int series_j2;
@@ -31,6 +25,7 @@ namespace puissance4
             {
                 Tableau[i] = new int[7];
             }
+            iNombreParColonne = new int[7];
             ListJoueur = new List<Joueur>();
             Recommancer();
             form = f;
@@ -83,81 +78,15 @@ namespace puissance4
                 }
             }
         }
-        public int I1
+        public int[] NombreParColonne
         {
             get
             {
-                return i1;
+                return iNombreParColonne;
             }
             set
             {
-                i1 = value;
-            }
-        }
-        public int I2
-        {
-            get
-            {
-                return i2;
-            }
-            set
-            {
-                i2 = value;
-            }
-        }
-        public int I3
-        {
-            get
-            {
-                return i3;
-            }
-            set
-            {
-                i3 = value;
-            }
-        }
-        public int I4
-        {
-            get
-            {
-                return i4;
-            }
-            set
-            {
-                i4 = value;
-            }
-        }
-        public int I5
-        {
-            get
-            {
-                return i5;
-            }
-            set
-            {
-                i5 = value;
-            }
-        }
-        public int I6
-        {
-            get
-            {
-                return i6;
-            }
-            set
-            {
-                i6 = value;
-            }
-        }
-        public int I7
-        {
-            get
-            {
-                return i7;
-            }
-            set
-            {
-                i7=value;
+                iNombreParColonne = value;
             }
         }
         public int Coup
@@ -178,18 +107,12 @@ namespace puissance4
         {
             for (int i = 0; i < Tableau.Length; i++)
             {
+                iNombreParColonne[i] = 0;
                 for (int j = 0; j < Tableau[i].Length; j++)
                 {
                     Tableau[i][j] = 0;
                 }
             }
-            i1 = 0;
-            i2 = 0;
-            i3 = 0;
-            i4 = 0;
-            i5 = 0;
-            i6 = 0;
-            i7 = 0;
             iCoup = 0;
             series_j1 = 0;
             series_j2 = 0;
@@ -210,23 +133,7 @@ namespace puissance4
             }
             try
             {
-                switch (i)
-                {
-                    case 0: Tableau[i1][i] = J;
-                        break;
-                    case 1: Tableau[i2][i] = J;
-                        break;
-                    case 2: Tableau[i3][i] = J;
-                        break;
-                    case 3: Tableau[i4][i] = J;
-                        break;
-                    case 4: Tableau[i5][i] = J;
-                        break;
-                    case 5: Tableau[i6][i] = J;
-                        break;
-                    case 6: Tableau[i7][i] = J;
-                        break;
-                }
+                Tableau[iNombreParColonne[i]][i] = J;
                 iCoup++;
                 return true;
             }
