@@ -15,11 +15,19 @@ namespace puissance4
     {
         private Jeu jeu;
         private int iProfondeur;
+        private TableLayoutPanel tableLayoutPanel;
         public Form1()
         {
             InitializeComponent();
             jeu = new Jeu(this);
             iProfondeur = 2;
+            tableLayoutPanel = new TableLayoutPanel();
+            tableLayoutPanel.Location = new Point(39, 39);
+            tableLayoutPanel.AutoSize = true;
+            tableLayoutPanel.AutoScroll = true;
+            Controls.Add(tableLayoutPanel);
+            CreationConteneur();
+            
         }
         private void btnJouer_click(object sender, EventArgs e)
         {
@@ -242,6 +250,28 @@ namespace puissance4
             btnIAVJ.Visible = true;
             btnJVIA.Visible = true;
             btnIAVIA.Visible = true;
+        }
+        private void CreationConteneur()
+        {
+            tableLayoutPanel.ColumnStyles.Clear();
+            tableLayoutPanel.Controls.Clear();
+            tableLayoutPanel.ColumnCount = jeu.tableau.Length;
+            tableLayoutPanel.RowCount = jeu.tableau[0].Length;
+
+            for(int i=0; i<tableLayoutPanel.ColumnCount;i++)
+            {
+                for(int j=0; j<tableLayoutPanel.RowCount;j++)
+                {
+                    PictureBox image = new PictureBox();
+                    image.Size = new System.Drawing.Size(60, 30);
+                    image.BackColor = Color.White;
+                    tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+                    tableLayoutPanel.Controls.Add(image);
+                }
+            }
+
+            
+
         }
 
         public void AfficheGagnant(Joueur joueurGagnant)

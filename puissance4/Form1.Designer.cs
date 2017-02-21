@@ -205,7 +205,7 @@
             // 
             // pct0
             // 
-            this.pct0.Location = new System.Drawing.Point(13, 261);
+            this.pct0.Location = new System.Drawing.Point(13, 276);
             this.pct0.Name = "pct0";
             this.pct0.Size = new System.Drawing.Size(74, 34);
             this.pct0.TabIndex = 7;
@@ -213,7 +213,7 @@
             // 
             // pct1
             // 
-            this.pct1.Location = new System.Drawing.Point(93, 261);
+            this.pct1.Location = new System.Drawing.Point(93, 276);
             this.pct1.Name = "pct1";
             this.pct1.Size = new System.Drawing.Size(74, 34);
             this.pct1.TabIndex = 8;
@@ -221,7 +221,7 @@
             // 
             // pct2
             // 
-            this.pct2.Location = new System.Drawing.Point(175, 261);
+            this.pct2.Location = new System.Drawing.Point(175, 276);
             this.pct2.Name = "pct2";
             this.pct2.Size = new System.Drawing.Size(74, 34);
             this.pct2.TabIndex = 9;
@@ -229,7 +229,7 @@
             // 
             // pct3
             // 
-            this.pct3.Location = new System.Drawing.Point(256, 261);
+            this.pct3.Location = new System.Drawing.Point(256, 276);
             this.pct3.Name = "pct3";
             this.pct3.Size = new System.Drawing.Size(74, 34);
             this.pct3.TabIndex = 10;
@@ -237,7 +237,7 @@
             // 
             // pct4
             // 
-            this.pct4.Location = new System.Drawing.Point(336, 261);
+            this.pct4.Location = new System.Drawing.Point(336, 276);
             this.pct4.Name = "pct4";
             this.pct4.Size = new System.Drawing.Size(74, 34);
             this.pct4.TabIndex = 11;
@@ -245,7 +245,7 @@
             // 
             // pct5
             // 
-            this.pct5.Location = new System.Drawing.Point(418, 261);
+            this.pct5.Location = new System.Drawing.Point(418, 276);
             this.pct5.Name = "pct5";
             this.pct5.Size = new System.Drawing.Size(74, 34);
             this.pct5.TabIndex = 12;
@@ -253,7 +253,7 @@
             // 
             // pct6
             // 
-            this.pct6.Location = new System.Drawing.Point(499, 261);
+            this.pct6.Location = new System.Drawing.Point(499, 276);
             this.pct6.Name = "pct6";
             this.pct6.Size = new System.Drawing.Size(74, 34);
             this.pct6.TabIndex = 13;
@@ -261,7 +261,7 @@
             // 
             // pct10
             // 
-            this.pct10.Location = new System.Drawing.Point(13, 221);
+            this.pct10.Location = new System.Drawing.Point(13, 236);
             this.pct10.Name = "pct10";
             this.pct10.Size = new System.Drawing.Size(74, 34);
             this.pct10.TabIndex = 14;
@@ -269,7 +269,7 @@
             // 
             // pct11
             // 
-            this.pct11.Location = new System.Drawing.Point(94, 221);
+            this.pct11.Location = new System.Drawing.Point(94, 236);
             this.pct11.Name = "pct11";
             this.pct11.Size = new System.Drawing.Size(74, 34);
             this.pct11.TabIndex = 15;
@@ -277,7 +277,7 @@
             // 
             // pct12
             // 
-            this.pct12.Location = new System.Drawing.Point(175, 221);
+            this.pct12.Location = new System.Drawing.Point(175, 236);
             this.pct12.Name = "pct12";
             this.pct12.Size = new System.Drawing.Size(74, 34);
             this.pct12.TabIndex = 16;
@@ -285,7 +285,7 @@
             // 
             // pct13
             // 
-            this.pct13.Location = new System.Drawing.Point(256, 221);
+            this.pct13.Location = new System.Drawing.Point(256, 236);
             this.pct13.Name = "pct13";
             this.pct13.Size = new System.Drawing.Size(74, 34);
             this.pct13.TabIndex = 17;
@@ -293,7 +293,7 @@
             // 
             // pct14
             // 
-            this.pct14.Location = new System.Drawing.Point(336, 221);
+            this.pct14.Location = new System.Drawing.Point(336, 236);
             this.pct14.Name = "pct14";
             this.pct14.Size = new System.Drawing.Size(74, 34);
             this.pct14.TabIndex = 18;
@@ -301,7 +301,7 @@
             // 
             // pct15
             // 
-            this.pct15.Location = new System.Drawing.Point(418, 221);
+            this.pct15.Location = new System.Drawing.Point(418, 236);
             this.pct15.Name = "pct15";
             this.pct15.Size = new System.Drawing.Size(74, 34);
             this.pct15.TabIndex = 19;
@@ -309,7 +309,7 @@
             // 
             // pct16
             // 
-            this.pct16.Location = new System.Drawing.Point(499, 221);
+            this.pct16.Location = new System.Drawing.Point(499, 236);
             this.pct16.Name = "pct16";
             this.pct16.Size = new System.Drawing.Size(74, 34);
             this.pct16.TabIndex = 20;
@@ -317,7 +317,7 @@
             // 
             // pct20
             // 
-            this.pct20.Location = new System.Drawing.Point(13, 181);
+            this.pct20.Location = new System.Drawing.Point(13, 196);
             this.pct20.Name = "pct20";
             this.pct20.Size = new System.Drawing.Size(74, 34);
             this.pct20.TabIndex = 21;
@@ -325,7 +325,7 @@
             // 
             // pct21
             // 
-            this.pct21.Location = new System.Drawing.Point(93, 181);
+            this.pct21.Location = new System.Drawing.Point(93, 196);
             this.pct21.Name = "pct21";
             this.pct21.Size = new System.Drawing.Size(74, 34);
             this.pct21.TabIndex = 22;
@@ -333,7 +333,7 @@
             // 
             // pct22
             // 
-            this.pct22.Location = new System.Drawing.Point(175, 181);
+            this.pct22.Location = new System.Drawing.Point(175, 196);
             this.pct22.Name = "pct22";
             this.pct22.Size = new System.Drawing.Size(74, 34);
             this.pct22.TabIndex = 23;
@@ -341,7 +341,7 @@
             // 
             // pct23
             // 
-            this.pct23.Location = new System.Drawing.Point(256, 181);
+            this.pct23.Location = new System.Drawing.Point(256, 196);
             this.pct23.Name = "pct23";
             this.pct23.Size = new System.Drawing.Size(74, 34);
             this.pct23.TabIndex = 24;
@@ -349,7 +349,7 @@
             // 
             // pct24
             // 
-            this.pct24.Location = new System.Drawing.Point(336, 181);
+            this.pct24.Location = new System.Drawing.Point(336, 196);
             this.pct24.Name = "pct24";
             this.pct24.Size = new System.Drawing.Size(74, 34);
             this.pct24.TabIndex = 25;
@@ -357,7 +357,7 @@
             // 
             // pct25
             // 
-            this.pct25.Location = new System.Drawing.Point(418, 181);
+            this.pct25.Location = new System.Drawing.Point(418, 196);
             this.pct25.Name = "pct25";
             this.pct25.Size = new System.Drawing.Size(74, 34);
             this.pct25.TabIndex = 26;
@@ -365,7 +365,7 @@
             // 
             // pct26
             // 
-            this.pct26.Location = new System.Drawing.Point(499, 181);
+            this.pct26.Location = new System.Drawing.Point(499, 196);
             this.pct26.Name = "pct26";
             this.pct26.Size = new System.Drawing.Size(74, 34);
             this.pct26.TabIndex = 27;
@@ -373,7 +373,7 @@
             // 
             // pct30
             // 
-            this.pct30.Location = new System.Drawing.Point(13, 141);
+            this.pct30.Location = new System.Drawing.Point(13, 156);
             this.pct30.Name = "pct30";
             this.pct30.Size = new System.Drawing.Size(74, 34);
             this.pct30.TabIndex = 28;
@@ -381,7 +381,7 @@
             // 
             // pct31
             // 
-            this.pct31.Location = new System.Drawing.Point(93, 141);
+            this.pct31.Location = new System.Drawing.Point(93, 156);
             this.pct31.Name = "pct31";
             this.pct31.Size = new System.Drawing.Size(74, 34);
             this.pct31.TabIndex = 29;
@@ -389,7 +389,7 @@
             // 
             // pct32
             // 
-            this.pct32.Location = new System.Drawing.Point(175, 141);
+            this.pct32.Location = new System.Drawing.Point(175, 156);
             this.pct32.Name = "pct32";
             this.pct32.Size = new System.Drawing.Size(74, 34);
             this.pct32.TabIndex = 30;
@@ -397,7 +397,7 @@
             // 
             // pct33
             // 
-            this.pct33.Location = new System.Drawing.Point(256, 141);
+            this.pct33.Location = new System.Drawing.Point(256, 156);
             this.pct33.Name = "pct33";
             this.pct33.Size = new System.Drawing.Size(74, 34);
             this.pct33.TabIndex = 31;
@@ -405,7 +405,7 @@
             // 
             // pct34
             // 
-            this.pct34.Location = new System.Drawing.Point(337, 141);
+            this.pct34.Location = new System.Drawing.Point(337, 156);
             this.pct34.Name = "pct34";
             this.pct34.Size = new System.Drawing.Size(74, 34);
             this.pct34.TabIndex = 32;
@@ -413,7 +413,7 @@
             // 
             // pct35
             // 
-            this.pct35.Location = new System.Drawing.Point(418, 141);
+            this.pct35.Location = new System.Drawing.Point(418, 156);
             this.pct35.Name = "pct35";
             this.pct35.Size = new System.Drawing.Size(74, 34);
             this.pct35.TabIndex = 33;
@@ -421,7 +421,7 @@
             // 
             // pct36
             // 
-            this.pct36.Location = new System.Drawing.Point(499, 141);
+            this.pct36.Location = new System.Drawing.Point(499, 156);
             this.pct36.Name = "pct36";
             this.pct36.Size = new System.Drawing.Size(74, 34);
             this.pct36.TabIndex = 34;
@@ -429,7 +429,7 @@
             // 
             // pct40
             // 
-            this.pct40.Location = new System.Drawing.Point(13, 101);
+            this.pct40.Location = new System.Drawing.Point(13, 116);
             this.pct40.Name = "pct40";
             this.pct40.Size = new System.Drawing.Size(74, 34);
             this.pct40.TabIndex = 35;
@@ -437,7 +437,7 @@
             // 
             // pct41
             // 
-            this.pct41.Location = new System.Drawing.Point(93, 101);
+            this.pct41.Location = new System.Drawing.Point(93, 116);
             this.pct41.Name = "pct41";
             this.pct41.Size = new System.Drawing.Size(74, 34);
             this.pct41.TabIndex = 36;
@@ -445,7 +445,7 @@
             // 
             // pct42
             // 
-            this.pct42.Location = new System.Drawing.Point(175, 101);
+            this.pct42.Location = new System.Drawing.Point(175, 116);
             this.pct42.Name = "pct42";
             this.pct42.Size = new System.Drawing.Size(74, 34);
             this.pct42.TabIndex = 37;
@@ -453,7 +453,7 @@
             // 
             // pct43
             // 
-            this.pct43.Location = new System.Drawing.Point(256, 101);
+            this.pct43.Location = new System.Drawing.Point(256, 116);
             this.pct43.Name = "pct43";
             this.pct43.Size = new System.Drawing.Size(74, 34);
             this.pct43.TabIndex = 38;
@@ -461,7 +461,7 @@
             // 
             // pct44
             // 
-            this.pct44.Location = new System.Drawing.Point(337, 101);
+            this.pct44.Location = new System.Drawing.Point(337, 116);
             this.pct44.Name = "pct44";
             this.pct44.Size = new System.Drawing.Size(74, 34);
             this.pct44.TabIndex = 39;
@@ -469,7 +469,7 @@
             // 
             // pct45
             // 
-            this.pct45.Location = new System.Drawing.Point(418, 101);
+            this.pct45.Location = new System.Drawing.Point(418, 116);
             this.pct45.Name = "pct45";
             this.pct45.Size = new System.Drawing.Size(74, 34);
             this.pct45.TabIndex = 40;
@@ -477,7 +477,7 @@
             // 
             // pct46
             // 
-            this.pct46.Location = new System.Drawing.Point(499, 101);
+            this.pct46.Location = new System.Drawing.Point(499, 116);
             this.pct46.Name = "pct46";
             this.pct46.Size = new System.Drawing.Size(74, 34);
             this.pct46.TabIndex = 41;
@@ -485,7 +485,7 @@
             // 
             // pct50
             // 
-            this.pct50.Location = new System.Drawing.Point(13, 61);
+            this.pct50.Location = new System.Drawing.Point(13, 76);
             this.pct50.Name = "pct50";
             this.pct50.Size = new System.Drawing.Size(74, 34);
             this.pct50.TabIndex = 42;
@@ -493,7 +493,7 @@
             // 
             // pct51
             // 
-            this.pct51.Location = new System.Drawing.Point(93, 61);
+            this.pct51.Location = new System.Drawing.Point(93, 76);
             this.pct51.Name = "pct51";
             this.pct51.Size = new System.Drawing.Size(74, 34);
             this.pct51.TabIndex = 43;
@@ -501,7 +501,7 @@
             // 
             // pct52
             // 
-            this.pct52.Location = new System.Drawing.Point(175, 61);
+            this.pct52.Location = new System.Drawing.Point(175, 76);
             this.pct52.Name = "pct52";
             this.pct52.Size = new System.Drawing.Size(74, 34);
             this.pct52.TabIndex = 44;
@@ -509,7 +509,7 @@
             // 
             // pct53
             // 
-            this.pct53.Location = new System.Drawing.Point(256, 61);
+            this.pct53.Location = new System.Drawing.Point(256, 76);
             this.pct53.Name = "pct53";
             this.pct53.Size = new System.Drawing.Size(74, 34);
             this.pct53.TabIndex = 45;
@@ -517,7 +517,7 @@
             // 
             // pct54
             // 
-            this.pct54.Location = new System.Drawing.Point(337, 61);
+            this.pct54.Location = new System.Drawing.Point(337, 76);
             this.pct54.Name = "pct54";
             this.pct54.Size = new System.Drawing.Size(74, 34);
             this.pct54.TabIndex = 46;
@@ -525,7 +525,7 @@
             // 
             // pct55
             // 
-            this.pct55.Location = new System.Drawing.Point(418, 61);
+            this.pct55.Location = new System.Drawing.Point(418, 76);
             this.pct55.Name = "pct55";
             this.pct55.Size = new System.Drawing.Size(74, 34);
             this.pct55.TabIndex = 47;
@@ -533,7 +533,7 @@
             // 
             // pct56
             // 
-            this.pct56.Location = new System.Drawing.Point(499, 61);
+            this.pct56.Location = new System.Drawing.Point(499, 76);
             this.pct56.Name = "pct56";
             this.pct56.Size = new System.Drawing.Size(74, 34);
             this.pct56.TabIndex = 48;
@@ -541,7 +541,7 @@
             // 
             // btnJVJ
             // 
-            this.btnJVJ.Location = new System.Drawing.Point(13, 318);
+            this.btnJVJ.Location = new System.Drawing.Point(19, 335);
             this.btnJVJ.Name = "btnJVJ";
             this.btnJVJ.Size = new System.Drawing.Size(75, 23);
             this.btnJVJ.TabIndex = 49;
@@ -553,7 +553,7 @@
             // 
             // btnIAVJ
             // 
-            this.btnIAVJ.Location = new System.Drawing.Point(144, 318);
+            this.btnIAVJ.Location = new System.Drawing.Point(150, 335);
             this.btnIAVJ.Name = "btnIAVJ";
             this.btnIAVJ.Size = new System.Drawing.Size(75, 23);
             this.btnIAVJ.TabIndex = 50;
@@ -565,7 +565,7 @@
             // 
             // btnJVIA
             // 
-            this.btnJVIA.Location = new System.Drawing.Point(304, 318);
+            this.btnJVIA.Location = new System.Drawing.Point(310, 335);
             this.btnJVIA.Name = "btnJVIA";
             this.btnJVIA.Size = new System.Drawing.Size(75, 23);
             this.btnJVIA.TabIndex = 51;
@@ -577,7 +577,7 @@
             // 
             // btnIAVIA
             // 
-            this.btnIAVIA.Location = new System.Drawing.Point(461, 318);
+            this.btnIAVIA.Location = new System.Drawing.Point(467, 335);
             this.btnIAVIA.Name = "btnIAVIA";
             this.btnIAVIA.Size = new System.Drawing.Size(75, 23);
             this.btnIAVIA.TabIndex = 52;
@@ -589,7 +589,7 @@
             // 
             // btnJouer
             // 
-            this.btnJouer.Location = new System.Drawing.Point(223, 343);
+            this.btnJouer.Location = new System.Drawing.Point(232, 383);
             this.btnJouer.Name = "btnJouer";
             this.btnJouer.Size = new System.Drawing.Size(75, 23);
             this.btnJouer.TabIndex = 53;
@@ -602,61 +602,61 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 378);
+            this.ClientSize = new System.Drawing.Size(1258, 630);
+            this.Controls.Add(this.pct6);
+            this.Controls.Add(this.pct0);
             this.Controls.Add(this.btnJouer);
+            this.Controls.Add(this.pct1);
             this.Controls.Add(this.btnIAVIA);
+            this.Controls.Add(this.pct2);
             this.Controls.Add(this.btnJVIA);
+            this.Controls.Add(this.pct3);
             this.Controls.Add(this.btnIAVJ);
+            this.Controls.Add(this.pct4);
             this.Controls.Add(this.btnJVJ);
             this.Controls.Add(this.pct56);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.pct5);
+            this.Controls.Add(this.btn6);
             this.Controls.Add(this.pct55);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.pct10);
+            this.Controls.Add(this.btn4);
             this.Controls.Add(this.pct54);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.pct11);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.pct53);
-            this.Controls.Add(this.pct52);
-            this.Controls.Add(this.pct51);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.pct12);
             this.Controls.Add(this.pct50);
-            this.Controls.Add(this.pct46);
-            this.Controls.Add(this.pct45);
-            this.Controls.Add(this.pct44);
-            this.Controls.Add(this.pct43);
-            this.Controls.Add(this.pct42);
-            this.Controls.Add(this.pct41);
-            this.Controls.Add(this.pct40);
-            this.Controls.Add(this.pct36);
-            this.Controls.Add(this.pct35);
-            this.Controls.Add(this.pct34);
-            this.Controls.Add(this.pct33);
+            this.Controls.Add(this.pct52);
             this.Controls.Add(this.pct32);
+            this.Controls.Add(this.pct13);
+            this.Controls.Add(this.pct33);
+            this.Controls.Add(this.pct51);
             this.Controls.Add(this.pct31);
+            this.Controls.Add(this.pct14);
+            this.Controls.Add(this.pct34);
             this.Controls.Add(this.pct30);
+            this.Controls.Add(this.pct15);
+            this.Controls.Add(this.pct35);
+            this.Controls.Add(this.pct46);
             this.Controls.Add(this.pct26);
+            this.Controls.Add(this.pct16);
+            this.Controls.Add(this.pct36);
+            this.Controls.Add(this.pct45);
             this.Controls.Add(this.pct25);
+            this.Controls.Add(this.pct20);
+            this.Controls.Add(this.pct40);
+            this.Controls.Add(this.pct44);
             this.Controls.Add(this.pct24);
+            this.Controls.Add(this.pct21);
+            this.Controls.Add(this.pct41);
+            this.Controls.Add(this.pct43);
             this.Controls.Add(this.pct23);
             this.Controls.Add(this.pct22);
-            this.Controls.Add(this.pct21);
-            this.Controls.Add(this.pct20);
-            this.Controls.Add(this.pct16);
-            this.Controls.Add(this.pct15);
-            this.Controls.Add(this.pct14);
-            this.Controls.Add(this.pct13);
-            this.Controls.Add(this.pct12);
-            this.Controls.Add(this.pct11);
-            this.Controls.Add(this.pct10);
-            this.Controls.Add(this.pct6);
-            this.Controls.Add(this.pct5);
-            this.Controls.Add(this.pct4);
-            this.Controls.Add(this.pct3);
-            this.Controls.Add(this.pct2);
-            this.Controls.Add(this.pct1);
-            this.Controls.Add(this.pct0);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.pct42);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pct0)).EndInit();
