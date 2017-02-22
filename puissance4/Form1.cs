@@ -144,7 +144,6 @@ namespace puissance4
             
 
         }
-
         public void AfficheGagnant(Joueur joueurGagnant)
         {
             MessageBox.Show("le joueur "+joueurGagnant.NumeroJoueur.ToString()+" a gagné");
