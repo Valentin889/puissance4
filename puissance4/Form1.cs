@@ -22,12 +22,12 @@ namespace puissance4
             jeu = new Jeu(this);
             iProfondeur = 2;
             tableLayoutPanel = new TableLayoutPanel();
-            tableLayoutPanel.Location = new Point(39, 39);
+            tableLayoutPanel.Location = new Point(13, 76);
             tableLayoutPanel.AutoSize = true;
             tableLayoutPanel.AutoScroll = true;
             Controls.Add(tableLayoutPanel);
             CreationConteneur();
-            
+
         }
         private void btnJouer_click(object sender, EventArgs e)
         {
@@ -200,7 +200,7 @@ namespace puissance4
         }
         private void ReinitialiserAffichageEtRecommancer()
         {
-            foreach (Control p in Controls)
+            foreach (Control p in tableLayoutPanel.Controls)
             {
                 try
                 {
@@ -255,16 +255,15 @@ namespace puissance4
         {
             tableLayoutPanel.ColumnStyles.Clear();
             tableLayoutPanel.Controls.Clear();
-            tableLayoutPanel.ColumnCount = jeu.tableau.Length;
-            tableLayoutPanel.RowCount = jeu.tableau[0].Length;
+            tableLayoutPanel.ColumnCount = jeu.tableau[0].Length;
+            tableLayoutPanel.RowCount = jeu.tableau.Length;
 
             for(int i=0; i<tableLayoutPanel.ColumnCount;i++)
             {
                 for(int j=0; j<tableLayoutPanel.RowCount;j++)
                 {
                     PictureBox image = new PictureBox();
-                    image.Size = new System.Drawing.Size(60, 30);
-                    image.BackColor = Color.White;
+                    image.Size = new Size(74, 34);
                     tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
                     tableLayoutPanel.Controls.Add(image);
                 }
