@@ -58,132 +58,12 @@ namespace puissance4
 
         public void AppelleAffichage(int i)
         {
-            switch(i)
+           foreach(PictureBox p in tableLayoutPanel.Controls)
             {
-                case 0: 
-                    switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct0);
-                            break;
-                        case 1: Affichage(pct10);
-                            break;
-                        case 2: Affichage(pct20);
-                            break;
-                        case 3: Affichage(pct30);
-                            break;
-                        case 4: Affichage(pct40);
-                            break;
-                        case 5: Affichage(pct50);
-                            break;
-                    }
-                    break;
-                case 1: 
-                switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct1);
-                            break;
-                        case 1: Affichage(pct11);
-                            break;
-                        case 2: Affichage(pct21);
-                            break;
-                        case 3: Affichage(pct31);
-                            break;
-                        case 4: Affichage(pct41);
-                            break;
-                        case 5: Affichage(pct51);
-                            break;
-                    }
-                    break;
-                case 2: 
-                switch (jeu.NombreParColonne[2])
-                    {
-                        case 0: Affichage(pct2);
-                            break;
-                        case 1: Affichage(pct12);
-                            break;
-                        case 2: Affichage(pct22);
-                            break;
-                        case 3: Affichage(pct32);
-                            break;
-                        case 4: Affichage(pct42);
-                            break;
-                        case 5: Affichage(pct52);
-                            break;
-                       
-                    }
-                    break;
-                case 3: 
-                switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct3);
-                            break;
-                        case 1: Affichage(pct13);
-                            break;
-                        case 2: Affichage(pct23);
-                            break;
-                        case 3: Affichage(pct33);
-                            break;
-                        case 4: Affichage(pct43);
-                            break;
-                        case 5: Affichage(pct53);
-                            break;
-                       
-                    }
-                    break;
-                case 4: 
-                switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct4);
-                            break;
-                        case 1: Affichage(pct14);
-                            break;
-                        case 2: Affichage(pct24);
-                            break;
-                        case 3: Affichage(pct34);
-                            break;
-                        case 4: Affichage(pct44);
-                            break;
-                        case 5: Affichage(pct54);
-                            break;
-                       
-                    }
-                    break;
-                case 5: 
-                switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct5);
-                            break;
-                        case 1: Affichage(pct15);
-                            break;
-                        case 2: Affichage(pct25);
-                            break;
-                        case 3: Affichage(pct35);
-                            break;
-                        case 4: Affichage(pct45);
-                            break;
-                        case 5: Affichage(pct55);
-                            break;
-                      
-                    }
-                    break;
-                case 6: 
-                    switch (jeu.NombreParColonne[i])
-                    {
-                        case 0: Affichage(pct6);
-                            break;
-                        case 1: Affichage(pct16);
-                            break;
-                        case 2: Affichage(pct26);
-                            break;
-                        case 3: Affichage(pct36);
-                            break;
-                        case 4: Affichage(pct46);
-                            break;
-                        case 5: Affichage(pct56);
-                            break;
-                      
-                    }
-                    break;
+                if(p.Tag.ToString()==Convert.ToString(i) + Convert.ToString(jeu.NombreParColonne[i]+1))
+                {
+                    Affichage(p);
+                }
             }
             jeu.NombreParColonne[i]++;
         }
@@ -200,18 +80,13 @@ namespace puissance4
         }
         private void ReinitialiserAffichageEtRecommancer()
         {
+<<<<<<< HEAD
             foreach (Control p in tableLayoutPanel.Controls)
+=======
+            foreach (PictureBox p in tableLayoutPanel.Controls)
+>>>>>>> affichage
             {
-                try
-                {
-                    PictureBox d = (PictureBox)p;
-                    d.BackColor = Color.White;
-                }
-                catch
-                {
-
-                }
-               
+                 p.BackColor = Color.White;
             }
             jeu.Recommancer();
         }
@@ -258,12 +133,16 @@ namespace puissance4
             tableLayoutPanel.ColumnCount = jeu.tableau[0].Length;
             tableLayoutPanel.RowCount = jeu.tableau.Length;
 
-            for(int i=0; i<tableLayoutPanel.ColumnCount;i++)
+            for(int i=tableLayoutPanel.RowCount; i>0;i--)
             {
-                for(int j=0; j<tableLayoutPanel.RowCount;j++)
+                for(int j=0; j<tableLayoutPanel.ColumnCount;j++)
                 {
                     PictureBox image = new PictureBox();
                     image.Size = new Size(74, 34);
+<<<<<<< HEAD
+=======
+                    image.Tag = Convert.ToString(j +""+ i);
+>>>>>>> affichage
                     tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
                     tableLayoutPanel.Controls.Add(image);
                 }
