@@ -80,11 +80,7 @@ namespace puissance4
         }
         private void ReinitialiserAffichageEtRecommancer()
         {
-<<<<<<< HEAD
-            foreach (Control p in tableLayoutPanel.Controls)
-=======
             foreach (PictureBox p in tableLayoutPanel.Controls)
->>>>>>> affichage
             {
                  p.BackColor = Color.White;
             }
@@ -139,10 +135,7 @@ namespace puissance4
                 {
                     PictureBox image = new PictureBox();
                     image.Size = new Size(74, 34);
-<<<<<<< HEAD
-=======
                     image.Tag = Convert.ToString(j +""+ i);
->>>>>>> affichage
                     tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
                     tableLayoutPanel.Controls.Add(image);
                 }
