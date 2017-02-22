@@ -62,8 +62,8 @@ namespace puissance4
             if (bMax)
             {
                 jeux.tableau[i][j] = NumeroJoueur;
-               
                 tmp = Min(jeux.tableau, profondeur - 1);
+
                 if (tmp > max)
                 {
                     max = tmp;
@@ -75,9 +75,9 @@ namespace puissance4
             {
                 jeux.tableau[i][j] = NumeroJoueurAdverse;
                 tmp = Max(jeux.tableau, profondeur - 1);
-                if (tmp > min)
+                if (tmp < min)
                 {
-                    max = tmp;
+                    min = tmp;
                     Maxi = i;
                     Maxj = j;
                 }
