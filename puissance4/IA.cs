@@ -30,7 +30,7 @@ namespace puissance4
                 return Maxj;
             }
         }
-        public IA(Jeu j, int Profondeur,int numeroJoueur, int numeroJoueurAdverse)
+        public IA(Jeu j, int Profondeur, int numeroJoueur, int numeroJoueurAdverse)
         {
             jeux = j;
             Maxi = 0;
@@ -48,7 +48,7 @@ namespace puissance4
             max = -10000;
 
 
-            for(int i=0;i<jeux.NombreParColonne.Length;i++)
+            for (int i = 0; i < jeux.NombreParColonne.Length; i++)
             {
                 Test(jeux.NombreParColonne[i], i, iProfondeur, true);
             }
@@ -56,7 +56,7 @@ namespace puissance4
             this.dernierCoup = maxi;
             jeux.ProchainJoueur();
         }
-        private void Test(int i,int j, int profondeur, bool bMax)
+        private void Test(int i, int j, int profondeur, bool bMax)
         {
             jeux.NombreParColonne[j]++;
             if (bMax)
@@ -120,12 +120,11 @@ namespace puissance4
         private int eval(int[][] jeu)
         {
             int vainqueur, nb_de_pions = 0;
-            int i, j;
 
             //On compte le nombre de pions présents sur le plateau
-            for (i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (j = 0; j < 3; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     if (jeu[i][j] != 0)
                     {
@@ -136,11 +135,11 @@ namespace puissance4
 
             if ((vainqueur = jeux.gagnant()) != 0)
             {
-                if (vainqueur == 1)
+                if (vainqueur == this.NumeroJoueur)
                 {
                     return 1000 - nb_de_pions;
                 }
-                else if (vainqueur == 2)
+                else if (vainqueur == this.NumeroJoueurAdverse)
                 {
                     return -1000 + nb_de_pions;
                 }
@@ -153,11 +152,24 @@ namespace puissance4
             //On compte le nombre de séries de 2 pions alignés de chacun des joueurs
             int series_j1 = 0, series_j2 = 0;
 
-            jeux.nb_series(2);
 
-            return series_j1 - series_j2;
+            for (int i=0; i<jeu.Length;i++)
+            {
+                //test ligne
+                for(int j=0; j<jeu[i].Length;j++)
+                {
+                    
+                }
+                //test colonne
+                for(int j=0; j<jeu.Length;j++)
+                {
+
+                }
+            }
+
+            return 0;
 
         }
- 
     }
 }
+        
