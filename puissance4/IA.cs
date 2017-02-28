@@ -117,31 +117,21 @@ namespace puissance4
             return min;
 
         }
-        private int eval(int[][] jeu)
+        public int eval(int[][] jeu)
         {
-            int vainqueur, nb_de_pions = 0;
 
-            //On compte le nombre de pions présents sur le plateau
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    if (jeu[i][j] != 0)
-                    {
-                        nb_de_pions++;
-                    }
-                }
-            }
+            int vainqueur = 0;
+            
 
             if ((vainqueur = jeux.gagnant()) != 0)
             {
                 if (vainqueur == this.NumeroJoueur)
                 {
-                    return 1000 - nb_de_pions;
+                    return Int32.MaxValue;
                 }
                 else if (vainqueur == this.NumeroJoueurAdverse)
                 {
-                    return -1000 + nb_de_pions;
+                    return Int32.MinValue;
                 }
                 else
                 {
@@ -149,27 +139,215 @@ namespace puissance4
                 }
             }
 
-            //On compte le nombre de séries de 2 pions alignés de chacun des joueurs
-            int series_j1 = 0, series_j2 = 0;
-
+           
+            //on compte le nombre de possibilité de gagné par joueur
+            int iCompteur1 = 0;
+            int iCompteur2 = 0;
+            int iSeries_j1 = 0;
+            int iSeries_j2 = 0;
 
             for (int i=0; i<jeu.Length;i++)
             {
+                iCompteur1 = 0;
+                iCompteur2 = 0;
                 //test ligne
                 for(int j=0; j<jeu[i].Length;j++)
                 {
-                    
+                    if(jeu[i][j]==this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if(jeu[i][j]==this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if(iCompteur1>=4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if(iCompteur2>=4)
+                    {
+                        iSeries_j2++;
+                    }
                 }
+                iCompteur1 = 0;
+                iCompteur2 = 0;
                 //test colonne
                 for(int j=0; j<jeu.Length;j++)
                 {
-
+                    if (jeu[j][i] == this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if (jeu[j][i] == this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if (iCompteur1 >= 4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if (iCompteur2 >= 4)
+                    {
+                        iSeries_j2++;
+                    }
                 }
             }
 
-            return 0;
+            //test des trois première diagonal montante
+            for (int iColonne = 2 ;iColonne >= 0; iColonne--)
+            {
+                iCompteur1 = 0;
+                iCompteur2 = 0;
+                for (int i=iColonne, j=0; i<jeu.Length&&j<jeu[iColonne].Length-iColonne-1;i++,j++)
+                {
+                    if (jeu[i][j] == this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if (jeu[i][j] == this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if (iCompteur1 >= 4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if (iCompteur2 >= 4)
+                    {
+                        iSeries_j2++;
+                    }
+                }
+            }
+            //test des trois dernière diagonal montante
+            for(int iLigne=1; iLigne<4;iLigne++)
+            {
+                iCompteur1 = 0;
+                iCompteur2 = 0;
+                for (int i=0, j=iLigne; i<jeu.Length-iLigne+1&&j<jeu[i].Length;i++,j++)
+                {
+                    if (jeu[i][j] == this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if (jeu[i][j] == this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if (iCompteur1 >= 4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if (iCompteur2 >= 4)
+                    {
+                        iSeries_j2++;
+                    }
+                }
+            }
+
+
+            //test des trois première diagonal descendante
+            for (int iLigne=3;iLigne>0;iLigne--)
+            {
+                iCompteur1 = 0;
+                iCompteur2 = 0;
+                for (int i=jeu.Length-1, j=iLigne;i>=iLigne-1&&j<jeu[i].Length;i--,j++)
+                {
+                    if (jeu[i][j] == this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if (jeu[i][j] == this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if (iCompteur1 >= 4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if (iCompteur2 >= 4)
+                    {
+                        iSeries_j2++;
+                    }
+                }
+            }
+            //test des trois dernière diagonal descandante
+            int iReduction = 0;
+            for(int iColonne =jeu.Length-1; iColonne>2;iColonne--)
+            {
+                iCompteur1 = 0;
+                iCompteur2 = 0;
+                iReduction++;
+                for(int i=iColonne, j=0; i>=0&&j<jeu[i].Length-iReduction;i--,j++)
+                {
+                    if (jeu[i][j] == this.NumeroJoueur)
+                    {
+                        iCompteur2 = 0;
+                        iCompteur1++;
+                    }
+                    else if (jeu[i][j] == this.NumeroJoueurAdverse)
+                    {
+                        iCompteur1 = 0;
+                        iCompteur2++;
+                    }
+                    else
+                    {
+                        iCompteur1++;
+                        iCompteur2++;
+                    }
+                    if (iCompteur1 >= 4)
+                    {
+                        iSeries_j1++;
+                    }
+                    if (iCompteur2 >= 4)
+                    {
+                        iSeries_j2++;
+                    }
+                }
+            }
+
+
+            return iSeries_j1-iSeries_j2;
 
         }
     }
 }
         
+
+
+

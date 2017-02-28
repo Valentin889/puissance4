@@ -20,7 +20,7 @@ namespace puissance4
         {
             InitializeComponent();
             jeu = new Jeu(this);
-            iProfondeur = 2;
+            iProfondeur = 4;
             tableLayoutPanel = new TableLayoutPanel();
             tableLayoutPanel.Location = new Point(13, 76);
             tableLayoutPanel.AutoSize = true;

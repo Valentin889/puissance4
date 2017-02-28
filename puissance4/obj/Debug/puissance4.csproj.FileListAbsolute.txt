@@ -79,3 +79,4 @@ F:\jeu\puissance4\puissance4\obj\Debug\puissance4.csprojResolveAssemblyReference
 F:\jeu\puissance4\puissance4\obj\Debug\puissance4.Form1.resources
 F:\jeu\puissance4\puissance4\obj\Debug\puissance4.Properties.Resources.resources
 F:\jeu\puissance4\puissance4\obj\Debug\puissance4.csproj.GenerateResource.Cache
+F:\jeu\puissance4\puissance4\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

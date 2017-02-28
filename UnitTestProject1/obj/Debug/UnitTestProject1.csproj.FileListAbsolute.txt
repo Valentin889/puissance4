@@ -1,0 +1,9 @@
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\puissance4.exe
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\puissance4.pdb
+F:\jeu\puissance4\UnitTestProject1\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\jeu\puissance4\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+F:\jeu\puissance4\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+F:\jeu\puissance4\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
